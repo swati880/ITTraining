@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="container-fluid bg-light sticky-top"> 
+        <nav class="navbar navbar-expand-md">
+            <a href="#" class="navbar-brand">
+                <img src="assests/images/logo.jpg">
+            </a>
+            <button class="navbar-toggler" data-bs-target="#myNav" data-bs-toggler="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-end navbar-collapse" id="myNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">New Batches</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Placement</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact Us
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="fake"></div>
+    <section class="container-fluid">
+        <div id="mySlide" class="carousel Slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+            data-bs-target="#mySlide"
+            class="active text-bg-danger"
+            data-bs-slide-to="0"
+          ></button>
+          <button
+            data-bs-target="#mySlide"
+            data-bs-slide-to="1"
+            class="text-bg-danger"
+          ></button>
+          <button
+            data-bs-target="#mySlide"
+            data-bs-slide-to="2"
+            class="text-bg-danger"
+          ></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assests/images/DESK1-min.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/images/DESK2-min.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/images/DESK3-min.jpg" class="d-block w-100" alt="">
+                </div>
+    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mySlide" data-bs-slide-to="prev">
+                <span class="carousel-control-prev-icon text-bg-danger"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mySlide" data-bs-slide-to="next">
+                <span class="carousel-control-next-icon text-bg-danger"></span>
+            </button>
+        </div>
+    </section>
+    <section class="container about mt-4">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-8 p-5">
+                <h3>Welcome to <span class="text-danger">Hyderabad IT Trainings</span></h3>
+
+                <p>Hyderabad IT Trainings is a Hyderabad based Training Institute delivering
+                     classroom and online trainings in India, USA and UK, Australia.
+                      We are Providing high quality training is our core value.
+                       We offer both classroom and online training on niche technologies
+                        which are in high demand.
+                     All our trainers are IT professionals with rich experience.</p>
+                     <p>Hyderabad IT Trainings is a leading training and placement company in hyderabad managed by
+                         industry experts with more than 9+ years of experience in leading MNC Companies. 
+                        We are wellknown for our practical approach towards training that enables students to
+                         gain realtime exposure.</p>
+                         <p>
+                            Hyderabad IT Trainings is a one-stop shop for IT courses, Web Development services & Recruitment services.
+                             Hyderabad IT Trainings concentrates on its vision of building up strong client and business partnerships.
+                             To this end, Hyderabad IT Trainings offers Real-time and placement focuses training services.
+                         </p>
+            </div>
+            <div class="col-12 col-md-12 col-xl-4 py-5">
+                <form action="" onsubmit="return validate()">
+                    <h3>Register Here</h3>
+                    <div class="form-floating mb-4">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                        
+                        <label for="">Name</label>
+                        
+                        <p id="namenote" class="note"></p>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" name="" id="email" class="form-control" placeholder="Email" required>
+                        <label for="">Email</label>
+                        <p id="emailnote" class="note"></p>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" name="" id="phone" class="form-control" placeholder="Mobile" required>
+                        <label for="">Mobile</label>
+                        <p id="phnnote" class="note"></p>
+                    </div>
+                    <select name="" id="" class="form-select">
+                        <option value="" hidden>Select your course</option>
+                        <option value="uiux">UI UX Designing</option>
+                        <option value="ui">UI Development</option>
+                        <option value="mern">Mern Development</option>
+                        <option value="py">python Development</option>
+                    </select>
+                    <div class="mt-3">
+                    <input type="submit" class="form-control btn-danger btn" name="" id=""></div>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <div class="modal" id="register">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enrollment Form</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <h3>Register Here</h3>
+                        <div class="form-floating mb-4">
+                            <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" name="" id="" class="form-control" placeholder="Mobile" required pattern="[0-9]{10}">
+                            <label for="">Mobile</label>
+                        </div>
+                        <select name="" id="" class="form-select">
+                            <option value="" hidden>Select your course</option>
+                            <option value="uiux">UI UX Designing</option>
+                            <option value="ui">UI Development</option>
+                            <option value="mern">Mern Development</option>
+                            <option value="py">python Development</option>
+                        </select>
+                        <input type="submit" class="form-control btn-danger btn" name="" id="">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--Courses-->
+    <div class="container-fluid bg-dark">
+        
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center text-white">Our courses</h1>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/python (1).jpg" alt="title">
+                        <div class="card-body">
+                            <h6 class="card-title">Pyhthon Full stack</h6>
+                                                          
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/full-stack-dev-min.jpg" alt="title">
+                        <div class="card-body">
+                            <h6 class="card-title">MERN Full stack Developer</h6>
+                                                           
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/ui.webp" alt="title">
+                        <div class="card-body">
+                            <h6 class="card-title">UI Development</h6>
+                                                          
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/react js training banner.webp" alt="title">
+                        <div class="card-body">
+                            <h6 class="card-title">React JS Training</h6>
+                                                           
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/ui-design-min.jpg" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">UI/UX Designing</h4>
+                                                          
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/nodejs.webp" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">Node JS</h4>
+                                                           
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/graphics-design.webp" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">React JS Training</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/django course.webp" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">React JS Training</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/seo-min.jpg" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">SEO</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/jfc.jpg" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">React JS Training</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/adwords-min.jpg" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">Google Adwords</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assests/images/course/phpmysql-min.jpg" alt="title">
+                        <div class="card-body">
+                            <h4 class="card-title">Google Adwords</h4>
+                                                        
+                                 <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#register">Enroll Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--courses-->
+    <section class="container my-5">
+    <div>
+        <h3 class="text-center">Upcoming Courses</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr class="table-dark">
+            <th>Course</th>
+            <th>Date</th>
+            <th>Timings</th>
+            <th>Duration</th>
+            <th>Trainer</th>
+            <th>Register for Demo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="abctable">
+            <td>Web Designing</td>
+            <td>24-AUG-2023</td>
+            <td>11:00 AM - 12: 00 PM</td>
+            <td>45 Days</td>
+            <td>Mr.Bharghav</td>
+            <td><a href="https://hyderabadittrainings.com/web-designing-course-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>MERN Stack Development</td>
+            <td>21-AUG-2023</td>
+            <td>4:00 PM - 5:00 PM</td>
+            <td>90 Days</td>
+            <td>Mr.Bharghav</td>
+            <td><a href="https://hyderabadittrainings.com/mern-fullstack-developer-course-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>Python Fullstack Development</td>
+            <td>21-AUG-2023</td>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>90 Days</td>
+            <td>Mr. Sudheer</td>
+            <td><a href="https://hyderabadittrainings.com/python-fullstack-developer-course-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>UI Development</td>
+            <td>24-AUG-2023</td>
+            <td>11:00 AM - 12: 00 PM</td>
+            <td>70 Days</td>
+            <td>Mr.Bharghav</td>
+            <td><a href="https://hyderabadittrainings.com/ui-developer-course-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>UIUX Designing</td>
+            <td>21-AUG-2023</td>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>90 Days</td>
+            <td>Mr.Anand</td>
+            <td><a href="https://hyderabadittrainings.com/ui-ux-designing-course-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>Python with DJango</td>
+            <td>24-AUG-2023</td>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>45 days</td>
+            <td>Mr. Sudheer</td>
+            <td><a href="https://hyderabadittrainings.com/python-training-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>PHP with MySQL</td>
+            <td>24-AUG-2023</td>
+            <td>3:00 PM - 4:00 PM</td>
+            <td>25 Days</td>
+            <td>Mr.Bharghav</td>
+            <td><a href="https://hyderabadittrainings.com/php-training-hyderabad.php">Register Now</a></td>
+            </tr>
+            <tr class="abctable">
+            <td>DJango</td>
+            <td>21-AUG-2023</td>
+            <td>4:00 PM - 5:00 PM</td>
+            <td>45 Days</td>
+            <td>Mr. Sudheer</td>
+            <td><a href="https://hyderabadittrainings.com/python-django-training-hyderabad.php">Register Now</a></td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section>
+<section>
+    <div class="container-fluid bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center"> Training <span class="text-danger">Mode</span></h1>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="w-100 p-2 bg-white text-center mb-4">
+                        <a href>
+                        <img src="images/conference-min.png" alt="" width="50px" height="100px">
+                        </a>
+                        <div>
+                            <h4>ClassRoom Training</h4>
+                            <p>Get trained by Industry Experts via Classroom Training with live projects.</p>                             
+                                
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="w-100 p-2 bg-white text-center mb-4">
+                        <a href>
+                        <img src="images/online-training-min.png" alt="" width="50px" height="100px">
+                        </a>
+                        <div>
+                            <h4>ClassRoom Training</h4>
+                            <p>Get trained by Industry Experts via Classroom Training with live projects.</p>                             
+                                
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="w-100 p-2 bg-white text-center mb-4">
+                        <a href>
+                        <img src="images/corporate-min.png" alt="" width="50px" height="100px">
+                        </a>
+                        <div>
+                            <h4>ClassRoom Training</h4>
+                            <p>Get trained by Industry Experts via Classroom Training with live projects.</p>                             
+                                
+                        </div>
+
+                    </div>
+                    </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+                    <div class="w-100 p-2 bg-white text-center mb-4">
+                        <a href>
+                        <img src="images/video-learning-min.png" alt="" width="50px" height="100px">
+                        </a>
+                        <div>
+                            <h4>ClassRoom Training</h4>
+                            <p>Get trained by Industry Experts via Classroom Training with live projects.</p>                             
+                                
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section>
+    <div class="container-fluid text-bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                   <h1> <i class="bi bi-person"></i></h1>
+                    <h1><span id="courses">15</span>+</h1>
+                    <p>No. of courses</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <h1> <i class="bi bi-person"></i></h1>
+                     <h1><span id="num2">3100</span>+</h1>
+                     <p>No. of Students</p>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <h1> <i class="bi bi-person"></i></h1>
+                     <h1><span id="num3">2500</span>+</h1>
+                     <p>No. of placements</p>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                    <h1> <i class="bi bi-person"></i></h1>
+                     <h1><span id="num4">3900</span>+</h1>
+                     <p>No. of Registrations</p>
+                 </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+ <section>
+    <div class="container-fluid bg-dark-subtle">
+       <div class="container p-4 bottom-0">
+ <div class="owl-carousel">
+                
+   <img src="images/hydIT PLACEMENT OPEN (1)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN (2)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN (3)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN (1)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN (2)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN (3)-min.jpg">
+   <img src="images/hydIT PLACEMENT OPEN-min.jpg">
+                    
+</div>
+</div>
+</div>
+
+    
+ </section>
+ <section>
+    <div class="container-fluid bg-dark-subtle mt-5">
+      <div class="text-center p-2">  <h3>Our Students <span class="text-danger">Placed In</span></h3></div>
+        <div class="container">
+            <div class="owl-carousel">
+                <div> <button class="text-bg-danger">Cognizant</button></div>
+                <div> <button class="text-bg-info">CSE Technology</button></div>
+                <div> <button class="text-bg-light">Nevio Solution</button></div>
+                <div> <button class="text-bg-dark">Sysco Infotech</button></div>
+                <div> <button class="text-bg-primary">Thomas Reuters</button></div>
+                <div> <button class="text-bg-secondary">EDS Technology</button></div>
+                <div> <button class="text-bg-success">Cognizant</button></div>
+                <div> <button class="text-bg-warning">CSE Technology</button></div>
+                <div> <button class="text-bg-danger">Nevio Solution</button></div>
+                <div> <button class="text-bg-danger">Sysco Infotech</button></div>
+                <div> <button class="text-bg-danger">Thomas Reuters</button></div>
+                <div> <button class="text-bg-danger">EDS Technology</button></div>
+            </div>
+
+        </div>
+
+    </div>
+ </section>
+ <section>
+    <div class="container-fluid footer-top">
+        <div class="row">
+        <div class="col-12 col-lg-3 col-xl-3 mt-2">
+            <h4>Hyderabad IT Trainings</h4>
+            <p>
+                Hyderabad IT Trainings offers an excellent Software courses training with end to end support to the candidates. We offer MERN Full stack, Python Fullstack, 
+                React JS, UI Development, Web/UI Designing & Web Development.</p>
+
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 mt-2">
+            <h4>Quick Links</h4>
+            
+           <div><i class="bi bi-caret-right-fill"><a href="" class="footcolor">Registration</a></i></div> 
+           <div><i class="bi bi-caret-right-fill"> <a href="" class="footcolor">All courses</a></i></div>
+           <div> <i class="bi bi-caret-right-fill"><a href="" class="footcolor">Privacy Policy</a></i></div>
+            <div><i class="bi bi-caret-right-fill"><a href="" class="footcolor">Refund Policy</a></i></div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 mt-2">
+            <h4>Reach Us</h4>
+            
+            <p>House No 40, Third Floor</p>
+            <p>Vittalrao Nagar</p>
+            <p>Madhapur</p>
+            <p>Hitech City Main Rd</p>
+            Hyderabad
+
+            
+
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 mt-2">
+            <h4>Contact Us </h4>
+            <p><i class="bi bi-telephone-fill">     +91 81439 56849</i></p> 
+                
+            <p><i class="bi bi-envelope">           info@hyderabadittrainings.com</i></p>  
+
+        </div>
+    </div>
+        
+    </div>
+ </section>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="plugin/countMe.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" 
+ integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+   window.onload = ()=>{
+    // $(selector).countMe(delay,speed)
+    $("#courses").countMe(0,100);
+    $("#num2").countMe(0,0);
+    $("#num3").countMe(0,0);
+    $("#num4").countMe(0,0);
+ }
+</script>
+<script>
+    $('#placements').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+<script>
+    function validate(){
+        let name=document.getElementById("name").value;
+        let phone=document.getElementById("phone").value;
+        let email=document.getElementById("email").value;
+        let namestatus=false;
+        let mobilestatus=false;
+        let emailstatus=false;
+        let alphaExp=/^[a-zA-Z]+$/;
+        let numExp=/^[0-9]+$/;
+        let emailExp=/^[a-zA-z0-9]+@[a-zA-Z]+.[a-zA-Z]+$/;
+        
+        //alert("Welcome" +name)
+        if(name.match(alphaExp)){
+            document.getElementById("name").innerHTML="";
+            namestatus=true;
+        }
+        else{
+            document.getElementById("namenote").innerHTML="Name should contain only alphabets";
+            namestatus=false;
+        }
+
+        if(phone.match(numExp)){
+            document.getElementById("phone").innerHTML="";
+            mobilestatus=true;
+        }
+        else{
+            document.getElementById("phnnote").innerHTML="Phone no. should contain only numbers";
+            mobilestatus=false;
+        }
+        if(email.match(emailExp)){
+            document.getElementById("email").innerHTML="";
+            emailstatus=true;
+        }
+        else{
+            document.getElementById("emailnote").innerHTML="Please enter valid email id";
+            emailstatus=false;
+        }
+
+        if(namestatus===true && mobilestatus===true && emailstatus===true){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+        }
+
+    </script>
+
+  
+</body>
+</html>
